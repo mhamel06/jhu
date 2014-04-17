@@ -1,0 +1,24 @@
+img.logo {
+  border: 0px solid;
+  width: 200px; }
+
+.reveal section img {
+  border: 0px solid;
+  background-color: transparent;
+  box-shadow: none; }
+
+p, h1, h2, h3, h4, h5, h6, ul, li{
+    color:  #eeeeee;
+}
+.mm-brand{
+    background:url("../images/logo.png") fixed right top;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    position:absolute;
+    height:100%;
+    width:100%;
+}
+
+.reveal h1{
+    text-shadow:none;
+}

@@ -1,0 +1,70 @@
+/*
+  Custom variant to avoid font-overrides
+  when using Octicons
+*/
+/*
+  Octicons
+*/
+/*
+  Overrides, Design, Theme
+*/
+/* Override to resolve Font-Awesome and RevealJS styling on icon- */
+i[class^="icon-"] {
+  font-family: FontAwesome;
+  font-style: normal; }
+
+
+
+html, body, .reveal {
+  font-family: "Helvetica Neue", Helvetica;
+  font-size: 30px;
+  line-height: 1.35em; }
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+  line-height: auto !important;
+  overflow: visible !important;
+  vertical-align: baseline !important; }
+
+/* Fixes text duplication/mistaken inactive hover state rendering */
+a.roll {
+  -webkit-perspective: 0 !important;
+  -moz-perspective: 0 !important;
+  -ms-perspective: 0 !important;
+  perspective: 0 !important;
+  margin-top: auto !important; }
+
+hgroup {
+  margin: auto auto 1em auto !important; }
+
+pre {
+  box-shadow: 0 0 0 3px #999999;
+  border-radius: .25em;
+  font-size: 1em !important; }
+
+h1 {
+  font-family: "Apex New", "Helvetica Neue", Helvetica !important;
+  font-weight: bold !important;
+  color: #eeeeee !important;
+  font-size: 1.5em !important;
+  display: inline !important;
+  line-height: 2em !important;
+
+  text-align: center; }
+
+.cover h1 {
+  display: block;
+  font-size: 3.5em; }
+
+h2 {
+  font-family: "Apex New", "Helvetica Neue", Helvetica !important;
+  font-weight: book !important;
+  color: #eeeeee !important;
+  font-size: 1.5em !important;
+
+  margin-bottom: 1em !important;
+  text-align: center; }
+
+h3 {
+  line-height: 1.5em !important; }
