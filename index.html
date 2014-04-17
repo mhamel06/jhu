@@ -49,143 +49,130 @@
     <section>
         <section data-markdown>
             <script type="text/template">
-                ## Goal
-                Create a new discussion board for CS students
+                ## CSS3 Features
+                - Gradients
+                - Transitions
+                - Animations
+                - [Codepen.io](http://codepen.io/)
+            </script>
+        </section>
+    </section>
+
+    <section>
+        <section data-markdown>
+            <script type="text/template">
+                ## CSS Frameworks
+                - [Bootstrap](http://getbootstrap.com/)
+                - [Foundation](http://foundation.zurb.com/)
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## Why Use a Framework
+
+                - Layout Helpers <!-- .element: class="fragment" -->
+                - Responsive Design <!-- .element: class="fragment" -->
+                - Icons <!-- .element: class="fragment" -->
 
             </script>
         </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## Bootstrap Examples
+
+                - [Responsive Example](http://getbootstrap.com/examples/dashboard/)
+                - [Glyphicons](http://getbootstrap.com/components/#glyphicons-glyphs)
+                - [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+                - [Flat UI](http://designmodo.github.io/Flat-UI/)
+            </script>
+        </section>
+
     </section>
     <section>
         <section data-markdown>
             <script type="text/template">
-                ## Mock Ups
-                ![mock1](images/mock-all.png)
+                ## CSS Extension Languages
+                - Compile to CSS
+                - Simlar Syntax
+                - Support for variables
+                - Automatic web prefix
+
+                ![sass](images/sasslogo.png) <!-- .element: class="logo" -->
+                ![less](images/lesslogo.png)
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## Compile to CSS
+                SCSS
+                ```css
+                $font-stack:    Helvetica, sans-serif;
+                $primary-color: #333;
+
+                body {
+                  font: 100% $font-stack;
+                  color: $primary-color;
+                }
+                ```
+                Compiled CSS
+                ```css
+                body {
+                  font: 100% Helvetica, sans-serif;
+                  color: #333333;
+                }
+                ```
+            </script>
+        </section>
+        <section data-markdown>
+            <script type="text/template">
+                ## Automatic web prefix
+                SCSS
+
+                ```css
+                @keyframes slide{
+                  0%{transform: translate(0px);}
+                  50%{
+                    border-radius: 0 50px 50px 0;
+                    transform:translate(200px);
+                  }
+                }
+                ```
+                Compiled CSS
+                ```css
+                @-webkit-keyframes slide {
+                  0% {
+                    -webkit-transform: translate(0px);
+                    transform: translate(0px);
+                  }
+
+                  50% {
+                    border-radius: 0 50px 50px 0;
+                    -webkit-transform: translate(200px);
+                    transform: translate(200px);
+                  }
+                }
+
+                @keyframes slide {
+                  0% {
+                    -webkit-transform: translate(0px);
+                    transform: translate(0px);
+                  }
+
+                  50% {
+                    border-radius: 0 50px 50px 0;
+                    -webkit-transform: translate(200px);
+                    transform: translate(200px);
+                  }
+                }
+
+                ```
+
             </script>
         </section>
     </section>
-<section>
-    <section data-markdown>
-        <script type="text/template">
-            ## Mock Ups
-            ![mock1](images/mock-all.png)
-        </script>
-    </section>
-</section>
-    <section data-markdown="slides/styling.md"></section>
 
-        <section>
-            <section data-markdown>
-                <script type="text/template">
-                    ## CSS Frameworks
-                    - [Bootstrap](http://getbootstrap.com/)
-                    - [Foundation](http://foundation.zurb.com/)
-                </script>
-            </section>
-            <section data-markdown>
-                <script type="text/template">
-                    ## Why Use a Framework
 
-                    - Layout Helpers <!-- .element: class="fragment" -->
-                    - Responsive Design <!-- .element: class="fragment" -->
-                    - Icons <!-- .element: class="fragment" -->
 
-                </script>
-            </section>
-        </section>
-
-        <section>
-            <section data-markdown>
-                <script type="text/template">
-                    ## CSS3 Features
-                    - Gradients <!-- .element: class="fragment" -->
-                    - Transitions <!-- .element: class="fragment" -->
-                    - Animations <!-- .element: class="fragment" -->
-                </script>
-            </section>
-        </section>
-
-        <section>
-            <section data-markdown>
-                <script type="text/template">
-                    ## CSS Extension Languages
-                    - Compile to CSS
-                    - Simlar Syntax
-                    - Support for variables
-                    - Automatic web prefix
-
-                    ![sass](images/sasslogo.png) <!-- .element: class="logo" -->
-                    ![less](images/lesslogo.png)
-                </script>
-            </section>
-            <section data-markdown>
-                <script type="text/template">
-                    ## Compile to CSS
-                    SCSS
-                    ```css
-                    $font-stack:    Helvetica, sans-serif;
-                    $primary-color: #333;
-
-                    body {
-                      font: 100% $font-stack;
-                      color: $primary-color;
-                    }
-                    ```
-                    Compiled CSS
-                    ```css
-                    body {
-                      font: 100% Helvetica, sans-serif;
-                      color: #333333;
-                    }
-                    ```
-                </script>
-            </section>
-            <section data-markdown>
-                <script type="text/template">
-                    ## Automatic web prefix
-                    SCSS
-
-                    ```css
-                    @keyframes slide{
-                      0%{transform: translate(0px);}
-                      50%{
-                        border-radius: 0 50px 50px 0;
-                        transform:translate(200px);
-                      }
-                    }
-                    ```
-                    Compiled CSS
-                    ```css
-                    @-webkit-keyframes slide {
-                      0% {
-                        -webkit-transform: translate(0px);
-                        transform: translate(0px);
-                      }
-
-                      50% {
-                        border-radius: 0 50px 50px 0;
-                        -webkit-transform: translate(200px);
-                        transform: translate(200px);
-                      }
-                    }
-
-                    @keyframes slide {
-                      0% {
-                        -webkit-transform: translate(0px);
-                        transform: translate(0px);
-                      }
-
-                      50% {
-                        border-radius: 0 50px 50px 0;
-                        -webkit-transform: translate(200px);
-                        transform: translate(200px);
-                      }
-                    }
-
-                    ```
-
-                </script>
-            </section>
-        </section>
 
 
 
@@ -199,6 +186,8 @@
                 - Two Way Data Binding
                 - Client Side Templates
                 - Modular Design
+                - Client Side Routing
+                - Dependency Injection
             </script>
         </section>
         <section>
@@ -222,12 +211,104 @@
     <section data-markdown>
         <script type="text/template">
             ## Low Level JS Libraries
-            - [jQuery](http://jquery.com/) <!-- .element: class="fragment" -->
-            - [Lodash](http://lodash.com/) <!-- .element: class="fragment" -->
-            - [D3.js](http://d3js.org/) <!-- .element: class="fragment" -->
+            - [jQuery](http://jquery.com/)
+            - [Lodash](http://lodash.com/)
+            - [D3.js](http://d3js.org/)
         </script>
     </section>
 
+<!-- Pulling it all together -->
+<section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Goal
+            Create a new discussion board for CS students
+
+        </script>
+    </section>
+</section>
+<section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Mock Ups
+            ![mock1](images/mock-all.png)
+        </script>
+    </section>
+</section>
+
+
+<!--     Build Tools -->
+
+
+
+<section>
+    <section data-markdown>
+        <script type="text/template">
+            ## App Scaffolding
+            - [Yeoman](http://yeoman.io/)
+            - [Grunt](http://gruntjs.com/)
+            - [NPM](https://www.npmjs.org/)
+            - [Bower](http://bower.io/)
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ![yo](images/yo.png)
+
+            Yo scaffolds out a new application, writing your Grunt configuration and pulling in relevant Grunt tasks and Bower dependencies that you might need for your build.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ![grunt](images/grunt-logo.svg)
+
+Grunt is used to build, preview and test your project, thanks to help from tasks curated by the Yeoman team and grunt-contrib.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ![node](images/node.svg)
+
+NPM is used for [Node.js](http://nodejs.org/) dependencies.
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ![bower](images/bower-logo.png)
+
+Bower is used for dependency management, so that you no longer have to manually download and manage your front end scripts.
+        </script>
+    </section>
+</section>
+
+
+<!-- Server side JS -->
+<section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Server Side JavaScript
+            - API
+            - Persistence
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## API
+            - [Node.js](http://nodejs.org/)
+            - [Express.js](http://expressjs.com/)
+        </script>
+    </section>
+    <section data-markdown>
+        <script type="text/template">
+            ## Persistence        
+            - [MongoDB](https://www.mongodb.org/)
+            - [CouchDB](http://couchdb.apache.org/)
+            - [PostgreSQL](http://www.postgresql.org/)
+            - [MySQL](http://www.mysql.com/)
+
+        </script>
+    </section>
+</section>
 
 
             </div>
